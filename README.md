@@ -35,25 +35,17 @@ The following dependencies are required for this assignment .
 
 - Create a symlink called `derive` for the `hd-wallet-derive/hd-wallet-derive.php` script. This will clean up the command needed to run the script in our code, as we can call `./derive` instead of `./hd-wallet-derive/hd-wallet-derive.php`: 
 
-  - Make sure you are in the top level project directory - in this case the directory named `wallet`. 
+  - Make sure we are in the top level project directory - in this case the directory named `wallet`. 
   
-  - Run the following command: `ln -s hd-wallet-derive/hd-wallet-derive.php derive`. 
+  - we run the following command: `ln -s hd-wallet-derive/hd-wallet-derive.php derive`. 
   
-   - Test that you can run the `./derive` script properly, by running the following command.  
+   - Test that we can run the `./derive` script properly, by running the following command.  
 
     - ```
       ./derive --key=xprv9zbB6Xchu2zRkf6jSEnH9vuy7tpBuq2njDRr9efSGBXSYr1QtN8QHRur28QLQvKRqFThCxopdS1UD61a5q6jGyuJPGLDV9XfYHQto72DAE8 --cols=path,address --coin=ZEC --numderive=3 -g
       ```
-  - The output should match what you see below:
-    - ```
-      +------+-------------------------------------+
-      | path | address                             |
-      +------+-------------------------------------+
-      | m/0  | t1V1Qp41kbHn159hvVXZL5M1MmVDRe6EdpA |
-      | m/1  | t1Tw6iqFY1g9dKeAqPDAncaUjha8cn9SZqX |
-      | m/2  | t1VGTPzBSSYd27GF8p9rGKGdFuWekKRhug4 |
-      +------+-------------------------------------+
-      ```
+  - The output should match what we see below:
+    ![directory-tree](Images/address.png)
 
 - Create a file called `wallet.py` 
 - The directory tree should look something like this:
